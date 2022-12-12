@@ -10,7 +10,8 @@ y estar logueado a firebase
  > firebase login
 Luego para desloguearse
  > firebase logout
-
+Luego ejecutar 
+ > npm run serve
 ### Mejoras
 Se utilizo el siguiente comando para hacer deploy de las funciones a la nube, pero actualmente se esta utilizando de forma local. Es necesario modificar el frontend para que utilice las mismas desde la nube.
  > firebase deploy --only functions
