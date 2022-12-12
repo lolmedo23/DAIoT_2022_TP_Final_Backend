@@ -9,7 +9,7 @@ const bigquery = new BigQuery({projectId: "daiot-lo"});
 // Lista de todos los valores de un dispositivo
 exports.getMedicionesDeviceID =
 functions.https.onRequest((request, response) => {
-  const table = "tp-lo-daiot.sensor_data_db.sensores_tph_5min_interval";
+  const table = "tp-lo-daiot.sensor_data_db.sensores_tph_origen";
   console.log("Request.query.idDevice: ", request.query.idDevice );
   const query = `SELECT * 
   FROM \`${table}\` data WHERE data.dev_id = ${request.query.idDevice}`;
